@@ -1,0 +1,36 @@
+.Superior{
+    text-align: center;
+}
+.Menú{
+    text-align: left;
+}
+#video-fondo{
+    position: absolute;
+    top: -17%;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+h1{
+    color: rgb(255, 7, 7);
+    font-size: 300%;
+}   
+
+h3{
+    color: rgb(255, 7, 7);
+    font-size: 200%;
+}
+p{
+        color: rgb(255, 255, 255);
+        font-size: 150%;
+}
+button{
+    border-radius: 20px;
+    margin-left: 20px;
+    font-size: 15px;
+}
+button:hover{
+    background-color: rgb(3, 117, 216);
+
+}
