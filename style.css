@@ -1,37 +1,93 @@
-.Superior{
+.Superior {
     text-align: center;
 }
-.Menú{
-    text-align: left;
+
+.Menú {
+    position: absolute; 
+    top: 35%; 
+    left: 35px; 
+    z-index: 2;
+    display: none;
+    width: auto; 
 }
-#video-fondo{
+
+#video-fondo {
     position: absolute;
     top: -17%;
     left: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    object-fit: cover;
 }
-h1{
+
+h1 {
     color: rgb(255, 7, 7);
     font-size: 300%;
-}   
+}
 
-h3{
+h3 {
     color: rgb(255, 7, 7);
     font-size: 200%;
 }
-p{
-        color: rgb(255, 255, 255);
-        font-size: 150%;
-}
-button{
-    border-radius: 20px;
-    margin-left: 20px;
-    font-size: 15px;
-}
-button:hover{
-    background-color: rgb(3, 117, 216);
 
+p {
+    color: rgb(255, 255, 255);
+    font-size: 150%;
+}
+
+button {
+    border-radius: 20px;
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: center;
+    width: 120%; 
+    display: block;
+    color: rgb(247, 7, 7);
+    background-color: black;
+    line-height: 50px; 
+    transition: all 0.3s ease; 
+}
+
+button:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    letter-spacing: 5px;
+    transform: translateY(10px);
+}
+
+input.menu-toggle:checked ~ .Superior .Menú {
+    display: block;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+label[for="toggle"] {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    cursor: pointer;
+    font-size: 40px;
+    z-index: 4;
+    color: rgb(255, 0, 0);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    z-index: 1; 
+    display: none; 
+}
+
+input.menu-toggle:checked ~ .cuerpo .overlay {
+    display: block;
+}
+
+.Menú a {
+    text-decoration: none; 
 }

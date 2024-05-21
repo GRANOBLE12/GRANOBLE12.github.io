@@ -7,18 +7,18 @@
     <title>La Magia De Las Fragancias</title>
 </head>
 <body>
+    <input type="checkbox" id="toggle" class="menu-toggle">
+    <label for="toggle">&#9776;</label>
     <div class="Superior">
-    <h1>La Magia De Las Fragancias</h1>
-    <div class="Menú">
-        <div>
-        <a href="./index.html"><button class="card">INICIO</button></a>
-        <a href="./Productos.html"><button class="card">PRODUCTOS</button></a>
-        <a href="./Informacion.html"><button class="card">INFORMACIÓN</button></a>
+        <h1>La Magia De Las Fragancias</h1>
+        <div class="Menú">
+            <a href="./index.html"><button class="boton">INICIO</button></a>
+            <a href="./Productos.html"><button class="boton">PRODUCTOS</button></a>
+            <a href="./Informacion.html"><button class="boton">INFORMACIÓN</button></a>
+        </div>
     </div>
-    </div>
-    </div>
+
     <div class="cuerpo">  
-         
         <h3>¡Bienvenido a La Magia de las Fragancias!</h3>
         <p>Descubre un mundo de encanto y bienestar en nuestra tienda, <br>
            donde cada fragancia es una experiencia única y cada cuidado <br>
@@ -27,10 +27,12 @@
         </p>
         <p>¡Explora nuestra colección y deja que la magia comience en tu <br>
            rutina diaria de cuidado personal! <br>
-           La Magia de las Fragancias - Donde cada aroma cuenta una historia.<br>
-           <video autoplay loop muted id="video-fondo">
-            <source src="videofondo.mp4">
-       </video> 
-        </div>
+           La Magia de las Fragancias - Donde cada aroma cuenta una historia.
+        </p>
+        <video autoplay loop muted id="video-fondo">
+            <source src="Imagenes y videos/videofondo.mp4">
+        </video>
+        <div class="overlay"></div> <!-- Nuevo elemento para el fondo negro -->
+    </div>
 </body>
 </html>

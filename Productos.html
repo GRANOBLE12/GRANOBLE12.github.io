@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----<link rel="stylesheet" href="style3.css">--->
+    <link rel="stylesheet" href="style2.css">
+    <title>Productos</title>
+</head>
+<body>
+    <input type="checkbox" id="hamburguesa" class="menu-hamburguesa">
+    <label for="hamburguesa">&#9776;</label>
+    <div class="Superior">
+        <h1>La Magia De Las Fragancias</h1>
+        <div class="Menú">
+            <a href="./index.html"><button class="boton">INICIO</button></a>
+            <a href="./Productos.html"><button class="boton">PRODUCTOS</button></a>
+            <a href="./Informacion.html"><button class="boton">INFORMACIÓN</button></a>
+        </div>
+    </div>
+    <div class="overlay"></div> 
+    <div class="barra-busqueda">
+        <input type="text" id="busqueda" placeholder="Buscar productos...">
+        <button id="boton-busqueda" class="boton-busqueda" onclick="buscarDivs()">Buscar</button>
+
+    </div>
+    <div class="contenedor-productos">
+        <div class="producto">
+            <img src="Imagenes y videos/nitro.png" alt="Producto 1">
+            <h2>Nitro</h2>
+            <p>Precio: $33.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/newcode.png" alt="Producto 2">
+            <h2>New Code</h2>
+            <p>Precio: $50.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/dorsay.png" alt="Producto 3">
+            <h2>Dorsay</h2>
+            <p>Precio: $65.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/winner.png" alt="Producto 4">
+            <h2>Winner</h2>
+            <p>Precio: $60.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/sweet black.png" alt="Producto 5">
+            <h2>Sweet Black</h2>
+            <p>Precio: $40.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/men.png" alt="Producto 6">
+            <h2>Men</h2>
+            <p>Precio: $35.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/magnat.png" alt="Producto 7">
+            <h2>Magnat</h2>
+            <p>Precio: $70.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/impredecible.png" alt="Producto 8">
+            <h2>Impredecible</h2>
+            <p>Precio: $100.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/Dancing.png" alt="Producto 9">
+            <h2>Dancing</h2>
+            <p>Precio: $30.000</p>
+        </div>
+        <div class="producto">
+            <img src="Imagenes y videos/Cardigan.png" alt="Producto 10">
+            <h2>Cardigan</h2>
+            <p>Precio: $45.000</p>
+        </div>
+    </div>
+    <div id="productoNoEncontrado" class="productoNoEncontrado">
+        <p>El producto buscado no existe.</p>
+    </div>
+<script>
+    function buscarDivs() {
+    const searchValue = document.getElementById('busqueda').value.toLowerCase();
+    const products = document.querySelectorAll('.producto');
+    const productoNoEncontrado = document.getElementById("productoNoEncontrado");
+
+    let bandera = false;
+
+    products.forEach(producto => {
+        const textContent = producto.textContent.toLowerCase();
+
+        if (textContent.includes(searchValue)) {
+            producto.style.display = 'block';
+            bandera = true; 
+        } else {
+            producto.style.display = 'none';
+        }
+    });
+
+    if (bandera) {
+        productoNoEncontrado.style.display = 'none';
+    } else {
+        productoNoEncontrado.style.display = 'block';
+        setTimeout(function() {
+            document.getElementById('busqueda').value = "";
+            products.forEach(product => {
+                product.style.display = 'block';
+            });
+            productoNoEncontrado.style.display = 'none';
+        }, 3000);
+    }
+}
+
+</script>
+</body>
+</html>
