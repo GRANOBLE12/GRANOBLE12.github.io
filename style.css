@@ -44,7 +44,7 @@ p {
 button {
     border-radius: 20px;
     margin-top: 25px;
-    font-size: 1.5em; /* Usar unidades relativas */
+    font-size: 25px;
     text-align: center;
     width: 100%; 
     max-width: 250px; /* Limita el ancho máximo de los botones */
@@ -54,13 +54,12 @@ button {
     line-height: 50px; 
     transition: all 0.3s ease; 
     margin-left: 20px;
-    
 }
 
 button:hover {
     background-color: rgb(255, 255, 255);
     color: black;
-    letter-spacing: 0.2em;
+    letter-spacing: 5px;
     transform: translateY(10px);
 }
 
@@ -79,7 +78,7 @@ label[for="toggle"] {
     top: 10px; 
     left: 10px; 
     cursor: pointer;
-    font-size: 2.5em;
+    font-size: 40px;
     z-index: 4;
     color: rgb(255, 0, 0);
 }
@@ -124,11 +123,11 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 1.2em;
     }
     button {
-        font-size: 20px; /* Usar unidades relativas */
+        font-size: 20px;
         width: 100%;
     }
     label[for="toggle"] {
-        font-size: 2em;
+        font-size: 30px;
     }
     .overlay {
         width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
@@ -153,10 +152,10 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 1.3em;
     }
     button {
-        font-size: 1.4em; /* Usar unidades relativas */
+        font-size: 22px;
     }
     label[for="toggle"] {
-        font-size: 2.5em;
+        font-size: 35px;
     }
     .overlay {
         width: 100%;
@@ -183,7 +182,7 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 25px;
     }
     label[for="toggle"] {
-        font-size: 2.5em;
+        font-size: 40px;
     }
     .overlay {
         width: 25%;
