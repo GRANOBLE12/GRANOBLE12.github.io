@@ -129,7 +129,7 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 30px;
     }
     .overlay {
-        width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
+        width: 60%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
         left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
 }
