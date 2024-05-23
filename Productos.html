@@ -80,19 +80,20 @@
         <p>El producto buscado no existe.</p>
     </div>
 <script>
+    productoNoEncontrado.style.display='none';
     function buscarDivs() {
     const searchValue = document.getElementById('busqueda').value.toLowerCase();
     const products = document.querySelectorAll('.producto');
     const productoNoEncontrado = document.getElementById("productoNoEncontrado");
 
     let bandera = false;
-
     products.forEach(producto => {
         const textContent = producto.textContent.toLowerCase();
 
         if (textContent.includes(searchValue)) {
             producto.style.display = 'block';
-            bandera = true; 
+            bandera = true;
+             
         } else {
             producto.style.display = 'none';
         }
