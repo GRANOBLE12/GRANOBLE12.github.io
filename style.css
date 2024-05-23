@@ -129,7 +129,8 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 30px;
     }
     .overlay {
-        width: 100%;
+        width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
+        left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
 }
 
@@ -156,7 +157,8 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 35px;
     }
     .overlay {
-        width: 100%;
+        width: 40%; /* Ajustado para que ocupe solo el 40% de la pantalla en tabletas */
+        left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
 }
 
@@ -183,6 +185,6 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 40px;
     }
     .overlay {
-        width: 25%;
+        width: 25%; /* Mantiene el 25% de ancho en pantallas grandes */
     }
 }
