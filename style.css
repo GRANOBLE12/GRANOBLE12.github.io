@@ -103,10 +103,9 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
 .Menú a {
     text-decoration: none; 
 }
+ 
 
-/* Media Queries para Responsividad */
-
-/* Dispositivos Pequeños (Teléfonos) */
+/*telefonos*/
 @media (max-width: 600px) {
     .Menú {
         top: 20%; 
@@ -123,17 +122,18 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 1.2em;
     }
     button {
-        font-size: 15px;
+        font-size: 20px;
+        width: 100%;
     }
-    label[for="toggle"] {
+    label[for="hamburguesa"] {
         font-size: 30px;
     }
     .overlay {
-        width: 60%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
+        width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
         left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
+   
 }
-
 /* Dispositivos Medianos (Tabletas) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .Menú {
@@ -153,14 +153,14 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
     button {
         font-size: 22px;
     }
-    label[for="toggle"] {
+    label[for="hamburguesa"] {
         font-size: 35px;
     }
     .overlay {
-        width: 100%;
+        width: 40%; /* Ajustado para que ocupe solo el 40% de la pantalla en tabletas */
+        left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
 }
-
 /* Dispositivos Grandes (Portátiles y Escritorios) */
 @media (min-width: 1025px) {
     .Menú {
@@ -180,10 +180,11 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
     button {
         font-size: 25px;
     }
-    label[for="toggle"] {
+    label[for="hamburguesa"] {
         font-size: 40px;
     }
     .overlay {
-        width: 25%;
+        width: 25%; /* Mantiene el 25% de ancho en pantallas grandes */
     }
+
 }
