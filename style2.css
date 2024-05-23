@@ -1,12 +1,15 @@
+/* Estilo global */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Sección Superior */
 .Superior {
     text-align: center;
 }
 
+/* Menú */
 .Menú {
     position: absolute; 
     top: 35%;
@@ -18,28 +21,32 @@ body {
 
 h1 {
     color: rgb(255, 7, 7);
-    font-size: 300%;
+    font-size: 3em;
 }
+
+/* Botones */
 button {
     border-radius: 20px;
     margin-top: 25px;
     font-size: 25px;
     text-align: center;
-    width: 120%; 
+    width: 100%; 
+    max-width: 250px; /* Limita el ancho máximo de los botones */
     display: block;
     color: rgb(247, 7, 7);
     background-color: black;
     line-height: 50px; 
     transition: all 0.3s ease; 
 }
+
 button:hover {
     background-color: rgb(255, 255, 255);
     color: black; 
     letter-spacing: 5px;
     transform: translateY(10px);
-   
 }
 
+/* Toggle del Menú */
 input.menu-hamburguesa:checked ~ .Superior .Menú {
     display: block;
 }
@@ -48,6 +55,7 @@ input.menu-hamburguesa:checked ~ .Superior .Menú {
     display: none;
 }
 
+/* Etiqueta del Toggle */
 label[for="hamburguesa"] {
     position: absolute;
     top: 10px; 
@@ -58,11 +66,12 @@ label[for="hamburguesa"] {
     color: rgb(255, 0, 0);
 }
 
+/* Overlay */
 .overlay {
-    position: absolute;
+    position: fixed; /* Cambiado a fixed para que siempre cubra la pantalla completa */
     top: 0;
     left: 0;
-    width: 25%; 
+    width: 100%; 
     height: 100%;
     background-color: rgba(0, 0, 0, 0.87);
     z-index: 1; 
@@ -73,10 +82,12 @@ input.menu-hamburguesa:checked ~ .overlay {
     display: block;
 }
 
+/* Enlaces del Menú */
 .Menú a {
     text-decoration: none; 
 }
 
+/* Barra de Búsqueda */
 .barra-busqueda {
     display: flex; 
     align-items: center;
@@ -90,6 +101,7 @@ input.menu-hamburguesa:checked ~ .overlay {
     width: 70%; 
 }
 
+/* Contenedor de Productos */
 .contenedor-productos {
     display: flex;
     flex-wrap: wrap;
@@ -97,7 +109,8 @@ input.menu-hamburguesa:checked ~ .overlay {
     justify-content: space-around;
 }
 
-.producto{
+/* Producto Individual */
+.producto {
     width: 200px; 
     border: 1px solid #ccc;
     padding: 10px;
@@ -119,6 +132,8 @@ input.menu-hamburguesa:checked ~ .overlay {
     font-size: 1em;
     color: #333;
 }
+
+/* Botón de Búsqueda */
 #boton-busqueda {
     border-radius: 0;
     width: auto;
@@ -134,4 +149,88 @@ input.menu-hamburguesa:checked ~ .overlay {
     letter-spacing: 0;
     border: none;
     transform: none;
+}
+
+/* Media Queries para Responsividad */
+
+/* Dispositivos Pequeños (Teléfonos) */
+@media (max-width: 600px) {
+    .Menú {
+        top: 20%; 
+        left: 10px;
+        width: 90%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    button {
+        font-size: 20px;
+        width: 100%;
+    }
+    label[for="hamburguesa"] {
+        font-size: 30px;
+    }
+    .overlay {
+        width: 100%;
+    }
+    #busqueda {
+        width: 80%;
+    }
+    .producto {
+        width: 45%;
+    }
+}
+
+/* Dispositivos Medianos (Tabletas) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Menú {
+        top: 30%; 
+        left: 20px;
+        width: 80%;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    button {
+        font-size: 22px;
+    }
+    label[for="hamburguesa"] {
+        font-size: 35px;
+    }
+    .overlay {
+        width: 100%;
+    }
+    #busqueda {
+        width: 75%;
+    }
+    .producto {
+        width: 30%;
+    }
+}
+
+/* Dispositivos Grandes (Portátiles y Escritorios) */
+@media (min-width: 1025px) {
+    .Menú {
+        top: 35%; 
+        left: 35px;
+        width: auto;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    button {
+        font-size: 25px;
+    }
+    label[for="hamburguesa"] {
+        font-size: 40px;
+    }
+    .overlay {
+        width: 25%;
+    }
+    #busqueda {
+        width: 70%;
+    }
+    .producto {
+        width: 200px;
+    }
 }
