@@ -111,7 +111,7 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
     .Menú {
         top: 20%; 
         left: 10px;
-        width: 90%;
+        width: 80%;
     }
     h1 {
         font-size: 2em;
@@ -124,7 +124,6 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
     }
     button {
         font-size: 20px;
-        width: 100%;
     }
     label[for="toggle"] {
         font-size: 30px;
