@@ -117,12 +117,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     h1 {
         font-size: 2em;
     }
-    h3 {
-        font-size: 1.5em;
-    }
-    p {
-        font-size: 1.2em;
-    }
+    
     button {
         font-size: 20px;
         width: 100%;
@@ -146,12 +141,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     h1 {
         font-size: 2.5em;
     }
-    h3 {
-        font-size: 1.8em;
-    }
-    p {
-        font-size: 1.3em;
-    }
+    
     button {
         font-size: 22px;
     }
@@ -172,12 +162,6 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     }
     h1 {
         font-size: 3em;
-    }
-    h3 {
-        font-size: 2em;
-    }
-    p {
-        font-size: 1.5em;
     }
     button {
         font-size: 25px;
