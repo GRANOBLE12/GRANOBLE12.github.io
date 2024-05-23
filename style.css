@@ -54,7 +54,7 @@ button {
     line-height: 50px; 
     transition: all 0.3s ease; 
     margin-left: 20px;
-    margin-right: 20px;
+    
 }
 
 button:hover {
@@ -124,7 +124,7 @@ input.menu-toggle:checked ~ .cuerpo .overlay {
         font-size: 1.2em;
     }
     button {
-        font-size: 1.2em; /* Usar unidades relativas */
+        font-size: 20px; /* Usar unidades relativas */
         width: 100%;
     }
     label[for="toggle"] {
