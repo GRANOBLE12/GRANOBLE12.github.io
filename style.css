@@ -44,7 +44,7 @@ p {
 button {
     border-radius: 20px;
     margin-top: 25px;
-    font-size: 25px; /* Usar unidades relativas */
+    font-size: 1.5em; /* Usar unidades relativas */
     text-align: center;
     width: 100%; 
     max-width: 250px; /* Limita el ancho máximo de los botones */
@@ -54,7 +54,6 @@ button {
     line-height: 50px; 
     transition: all 0.3s ease; 
     margin-left: 20px;
-    
 }
 
 button:hover {
