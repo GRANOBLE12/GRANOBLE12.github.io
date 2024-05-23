@@ -6,7 +6,7 @@
 /* Menú */
 .Menú {
     position: absolute; 
-    top: 35%; 
+    top: 35%;
     left: 35px; 
     z-index: 2;
     display: none;
@@ -65,16 +65,16 @@ button:hover {
 
 
 /* Toggle del Menú */
-input.menu-toggle:checked ~ .Superior .Menú {
+input.menu-hamburguesa:checked ~ .Superior .Menú {
     display: block;
 }
 
-.menu-toggle {
+.menu-hamburguesa {
     display: none;
 }
 
 /* Etiqueta del Toggle */
-label[for="toggle"] {
+label[for="hamburguesa"] {
     position: absolute;
     top: 10px; 
     left: 10px; 
@@ -83,6 +83,7 @@ label[for="toggle"] {
     z-index: 4;
     color: rgb(255, 0, 0);
 }
+
 
 /* Overlay */
 .overlay {
@@ -96,7 +97,7 @@ label[for="toggle"] {
     display: none; 
 }
 
-input.menu-toggle:checked ~ .cuerpo .overlay {
+input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     display: block;
 }
 
