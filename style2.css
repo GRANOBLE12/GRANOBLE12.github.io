@@ -172,8 +172,8 @@ input.menu-hamburguesa:checked ~ .overlay {
         font-size: 30px;
     }
     .overlay {
-        width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
-        left: 0; /* Asegura que el overlay se alinee a la izquierda */
+        width: 60%;
+        left: 0;
     }
     #busqueda {
         width: 80%;
