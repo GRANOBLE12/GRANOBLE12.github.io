@@ -151,10 +151,6 @@ input.menu-hamburguesa:checked ~ .overlay {
     border: none;
     transform: none;
 }
-
-/* Media Queries para Responsividad */
-
-/* Dispositivos Pequeños (Teléfonos) */
 /* Dispositivos Pequeños (Teléfonos) */
 @media (max-width: 600px) {
     .Menú {
@@ -183,6 +179,7 @@ input.menu-hamburguesa:checked ~ .overlay {
         width: 45%;
     }
 }
+
 
 /* Dispositivos Medianos (Tabletas) */
 @media (min-width: 601px) and (max-width: 1024px) {
