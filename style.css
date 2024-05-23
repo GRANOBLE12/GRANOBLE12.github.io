@@ -126,7 +126,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
         font-size: 30px;
     }
     .overlay {
-        width: 50%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
+        width: 60%; /* Ajustado para que ocupe solo el 50% de la pantalla en móviles */
         left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
    
@@ -149,7 +149,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
         font-size: 35px;
     }
     .overlay {
-        width: 40%; /* Ajustado para que ocupe solo el 40% de la pantalla en tabletas */
+        width: 50%; /* Ajustado para que ocupe solo el 40% de la pantalla en tabletas */
         left: 0; /* Asegura que el overlay se alinee a la izquierda */
     }
 }
