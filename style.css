@@ -58,10 +58,11 @@ button {
 
 button:hover {
     background-color: rgb(255, 255, 255);
-    color: black;
+    color: black; 
     letter-spacing: 5px;
     transform: translateY(10px);
 }
+
 
 /* Toggle del Menú */
 input.menu-toggle:checked ~ .Superior .Menú {

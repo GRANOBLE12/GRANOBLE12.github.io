@@ -37,6 +37,7 @@ button {
     background-color: black;
     line-height: 50px; 
     transition: all 0.3s ease; 
+    margin-left: 20px;
 }
 
 button:hover {
