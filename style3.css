@@ -134,8 +134,15 @@ input.menu-hamburguesa:checked ~ .overlay {
         width: 60%; 
         left: 0; 
     }
+    .IMG img {
+        width: 40px; 
+        height: 100px; 
+        object-fit: cover; 
+        transition: all 400ms;
+        
+    }
     .IMG img:active {
-        width: 250px;
+        width: 80px;
         opacity: 1;
     }
     
