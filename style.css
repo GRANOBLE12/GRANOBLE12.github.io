@@ -113,7 +113,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
         font-size: 2em;
     }
     p{
-        font-size: 1em;
+        font-size:20px;
     }
     button {
         font-size: 20px;
