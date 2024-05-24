@@ -1,10 +1,8 @@
-/* Reglas generales */
 
 .Superior {
     text-align: center;
 }
 
-/* Menú */
 .Menú {
     position: absolute;
     top: 35%;
@@ -24,7 +22,7 @@
     z-index: -1;
 }
 
-/* Encabezados */
+
 h1 {
     color: rgb(255, 7, 7);
     font-size: 3em;
@@ -35,13 +33,13 @@ h3 {
     font-size: 2em;
 }
 
-/* Párrafos */
+
 p {
     color: rgb(255, 255, 255);
     font-size: 1.5em;
 }
 
-/* Botones */
+
 button {
     border-radius: 20px;
     margin-top: 25px;
@@ -64,7 +62,7 @@ button:hover {
     transform: translateY(10px);
 }
 
-/* Toggle del Menú */
+
 input.menu-hamburguesa:checked ~ .Superior .Menú {
     display: block;
 }
@@ -73,7 +71,6 @@ input.menu-hamburguesa:checked ~ .Superior .Menú {
     display: none;
 }
 
-/* Etiqueta del Toggle */
 label[for="hamburguesa"] {
     position: absolute;
     top: 10px;
@@ -84,7 +81,7 @@ label[for="hamburguesa"] {
     color: rgb(255, 0, 0);
 }
 
-/* Overlay */
+
 .overlay {
     position: fixed;
     top: 0;
@@ -100,12 +97,10 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     display: block;
 }
 
-/* Enlaces del Menú */
+
 .Menú a {
     text-decoration: none;
 }
-
-/* Media Queries */
 
 /* Teléfonos */
 @media (max-width: 600px) {
@@ -116,6 +111,9 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     }
     h1 {
         font-size: 2em;
+    }
+    p{
+        font-size: 1em;
     }
     button {
         font-size: 20px;
@@ -130,7 +128,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     }
 }
 
-/* Tabletas */
+/* Tablets */
 @media (min-width: 601px) and (max-width: 1024px) {
     .Menú {
         top: 30%;
@@ -152,7 +150,7 @@ input.menu-hamburguesa:checked ~ .cuerpo .overlay {
     }
 }
 
-/* Portátiles y Escritorios */
+/* Portátiles */
 @media (min-width: 1025px) {
     .Menú {
         top: 35%;
