@@ -1,15 +1,6 @@
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-
 .Superior {
     text-align: center;
 }
-
-
 .Menú {
     position: absolute; 
     top: 35%;
@@ -18,7 +9,6 @@ body {
     display: none;
     width: auto; 
 }
-
 h1 {
     color: rgb(255, 7, 7);
     font-size: 3em;
@@ -67,7 +57,7 @@ label[for="hamburguesa"] {
 
 
 .overlay {
-    position: fixed; /* Cambiado a fixed para que siempre cubra la pantalla completa */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%; 
@@ -85,69 +75,44 @@ input.menu-hamburguesa:checked ~ .overlay {
     text-decoration: none; 
 }
 
-
-.barra-busqueda {
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-}
-
-#busqueda {
-    padding: 10px;
-    font-size: 16px;
-    width: 70%; 
-}
-
-
-.contenedor-productos {
+.contenedor-imagenes {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px; 
-    justify-content: space-around;
+    justify-content: center;
+    padding: 20px;
+}
+
+.IMG {
+    flex: 0 0 auto;
+     
+}
+
+.IMG img {
+    width: 120px; 
+    height: 300px; 
+    object-fit: cover; 
+    transition: all 400ms;
+    
 }
 
 
-.producto {
-    width: 200px; 
-    border: 1px solid #ccc;
-    padding: 10px;
-    text-align: center;
-    background-color: #f9f9f9;
+.IMG:nth-child(2) img,
+.IMG:nth-child(4) img {
+    margin-top: 20px; 
 }
 
-.producto img {
-    width: 100%;
-    height: auto;
+.IMG img:hover {
+    width: 250px;
+    opacity: 1;
 }
 
-.producto h2 {
-    font-size: 1.2em;
-    margin: 10px 0;
+.contenedor-imagenes:hover .IMG img {
+    opacity: 0.2; 
 }
 
-.producto p {
-    font-size: 1em;
-    color: #333;
+.contenedor-imagenes .IMG img:hover {
+    opacity: 1; 
 }
 
-/* Botón de Búsqueda */
-#boton-busqueda {
-    border-radius: 0;
-    width: auto;
-    height: 43px;
-    vertical-align: middle;
-    margin-top: -2px;
-    line-height: normal;
-}
-
-#boton-busqueda:hover {
-    background-color: black;
-    color: rgb(247, 7, 7);
-    letter-spacing: 0;
-    border: none;
-    transform: none;
-}
 /* Teléfonos */
 @media (max-width: 600px) {
     .Menú {
@@ -169,11 +134,17 @@ input.menu-hamburguesa:checked ~ .overlay {
         width: 60%; 
         left: 0; 
     }
-    #busqueda {
-        width: 80%;
+    .IMG img:active {
+        width: 250px;
+        opacity: 1;
     }
-    .producto {
-        width: 45%;
+    
+    .contenedor-imagenes:active .IMG img {
+        opacity: 0.2; 
+    }
+    
+    .contenedor-imagenes .IMG img:active {
+        opacity: 1; 
     }
 }
 
@@ -198,12 +169,6 @@ input.menu-hamburguesa:checked ~ .overlay {
         width: 40%; 
         left: 0; 
     }
-    #busqueda {
-        width: 75%;
-    }
-    .producto {
-        width: 30%;
-    }
 }
 
 /* Portátiles */
@@ -224,11 +189,5 @@ input.menu-hamburguesa:checked ~ .overlay {
     }
     .overlay {
         width: 25%;
-    }
-    #busqueda {
-        width: 70%;
-    }
-    .producto {
-        width: 200px;
     }
 }

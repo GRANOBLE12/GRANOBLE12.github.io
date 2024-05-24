@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Magia De Las Fragancias</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <input type="checkbox" id="hamburguesa" class="menu-hamburguesa">
+    <label for="hamburguesa">&#9776;</label>
+    <header class="Superior">
+        <h1>La Magia De Las Fragancias</h1>
+        <nav class="Menú">
+            <a href="index.html"><button class="boton">INICIO</button></a>
+            <a href="Productos.html"><button class="boton">PRODUCTOS</button></a>
+            <a href="Informacion.html"><button class="boton">INFORMACIÓN</button></a>
+        </nav>
+    </header>
+    <div class="contenedor-imagenes">
+        <div class="IMG">
+            <img src="Imagenes y videos/img1.jpg" alt="imagen1">
+        </div>
+        <div class="IMG">
+            <img src="Imagenes y videos/img2.jpg" alt="imagen2">
+        </div>
+        <div class="IMG">
+            <img src="Imagenes y videos/img3.jpg" alt="imagen3">
+        </div>
+        <div class="IMG">
+            <img src="Imagenes y videos/img4.jpg" alt="imagen4">
+        </div>
+        <div class="IMG">
+            <img src="Imagenes y videos/img5.jpg" alt="imagen5">
+        </div>
+    </div>
+
+        <div class="overlay"></div> <!-- Fondo negro -->
+    </main>
+    <script>
+    document.querySelectorAll('.imagen').forEach(item => {
+        item.addEventListener('mouseover', event => {
+            event.target.style.opacity = '1';
+        });
+        item.addEventListener('mouseout', event => {
+            event.target.style.opacity = '0.5';
+        });
+    });
+    </script>
+</body>
+</html>
